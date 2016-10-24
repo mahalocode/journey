@@ -1,0 +1,235 @@
+<html>
+<head>
+  <link rel="stylesheet" type="text/css" href="style.css">
+  
+  <link rel="stylesheet" href="prism-atom-dark.css" type="text/css" media="screen"/>
+  
+  <script type="text/javascript" src="prism.js"></script>
+  <script type="text/javascript" src="prism.ruby.js"></script>
+  
+  
+  <body>
+    
+    <div class="about-container">
+      
+      <ul>
+        
+        <li>
+          <a href="#About" class="nav-link">About</a>
+        </li>
+        <li>
+          <a href="#code-samples" class="nav-link">Code Samples</a>
+        </li>
+        <li>
+          <a href="#web-apps" class="nav-link">Web Apps</a>
+        </li>
+        <li>
+          <a href="#skills-and-tools" class="nav-link">Skills &amp; Tools</a>
+        </li>
+        <li class="hire-me">
+          <a href="#hire-me" class="nav-link">HIRE ME</a>
+        </li>
+      </ul>
+      
+      
+      <br class="clear"/>
+      
+      <div class="tom">
+        <pr><p>
+          
+          <a href="#"></a>"
+        </p></pr>
+      </div>
+      
+      <br class="clear"/>
+      <br />
+      <br />
+      <br />
+      <br />
+      <br />
+      <br />
+      <div>
+        <h3 id="code-sample"><%= image_tag 'k.jpg', class: 'kai' %></h3>
+        <hr class="yellow">
+      </div>
+      
+      <div class="box">
+        <h4>Temperature Conversion</h4>
+        <p>
+          This ruby program will prompt the user for a temperature in degrees Celsius and let the user know what the corresponding temperature is in Fahrenheit.
+        </p>
+      </div>
+      
+      <div class="box">
+        <pre><code class="language-ruby">
+          print &quot;Hello. Please enter a celsius value: &quot;
+          celsius = gets fahrenheit = (celsius.to_i * 9 / 5) + 32 print &quot;
+          The fahrenheit equivalent is: &quot;
+          print fahrenheit
+          puts &quot;.&quot;
+        </code></pre>
+      </div>
+      
+      <br class="clear"/>
+      
+      <div class="box">
+        <pre><code class="language-ruby">
+          puts &quot;Enter a number: &quot;
+          user_input = gets.chomp
+          converted_input = user_input.to_i
+          first_digit = converted_input % 10
+          suffix = nil
+          if converted_input &gt;= 10 &amp;&amp; converted_input &lt;= 20
+          suffix = &quot;th&quot;
+          elsif first_digit == 1
+          suffix = &quot;st&quot;
+          elsif first_digit == 2
+          suffix = &quot;nd&quot;
+          elsif first_digit == 3
+          suffix = &quot;rd&quot;
+          else suffix = &quot;th&quot;
+          end
+          puts &quot;You are in the #{converted_input}#{suffix} place.&quot;
+        </code></pre>
+      </div>
+      
+      <div class="box">
+        <h4>Ordinal Challenge</h4>
+        <p>
+          This ruby program will convert a plain number to the ordinal of the number. So for example, if the user enters 2, it will display 2nd, if the user enters 3, it will display 3rd, etc.
+        </p>
+      </div>
+      
+      <br class="clear"/>
+      <div class="box">
+        <h4>Foobar</h4>
+        <p>
+          This ruby program is an adaptation of a classic technical interview problem which displays sequences of the Foobar pattern.
+        </p>
+      </div>
+      
+      <div class="box">
+        <pre><code class="language-ruby">
+          a = 0
+          while a &lt; userInput\
+          a = a + 1
+          if a % 3 == 0 &amp;&amp; a % 5 == 0
+          puts &quot;foobar&quot;
+          elsif a % 3 == 0
+          puts &quot;foo&quot;
+          elsif a % 5 == 0 p
+          puts &quot;bar&quot;
+          else
+          puts a
+          end
+          end
+        </code></pre>
+      </div>
+      
+      <br class="clear"/>
+      
+      <h3 id="web-apps">Web Apps</h3>
+      <hr class="yellow"/>
+      <div class="box">
+        <h4>Quote Generator</h4>
+        <br/>
+        <br/>
+        <pre>
+          "A database-powered quote generator with a mobile-first design,
+          using the Ruby on Rails framework, HTML, and CSS.
+          Uses Git and GitHub for version control,
+          and launched on Heroku."
+        </pre>
+        <%= image_tag 'splurty.png', class: "full-width" %>
+        
+      </div>
+      
+      <div class="box">
+        <h4>Yelp Clone</h4>
+        <pre>
+          A Yelp clone that integrates with the Google Maps API
+          and includes features like user comments, star ratings,
+          image uploading, and user authentication.
+        </pre>
+        <br/>
+        <%= image_tag 'nomster.png', class: "full-width" %>
+      </div>
+      <br class="clear"/>
+      
+      <div class="box">
+        <h4>Two-Sided Market Place</h4>
+        <pre>
+          A two-sided, video-streaming marketplace platform that features
+          credit card payment capabilities,
+          user role management, complex user interfaces,
+          and advanced database relationships.
+        </pre>
+        <br/>
+        <%= image_tag 'flixter.png', class: "full-width" %>
+      </div>
+      <div class="box">
+        <h4>Test Driven Development</h4>
+        <pre>
+          An Instagram clone that was built using industry-standard,
+          test-driven development following numerous red/green/refactor cycles.
+        </pre>
+        <br/>
+        <%= image_tag 'grammable.png', class: "full-width" %>
+      </div>
+      <br class="clear"/>
+      <div class="box">
+        <h4>Single Page Todo Application</h4>
+        <pre>
+          This single-page to-do application features a fluid user interface that–
+          by using JavaScript– allows users to rapidly add dynamic content.
+        </pre>
+        <br/>
+        <%= image_tag 'todoster.png', class: "full-width" %>
+      </div>
+      <div class="box">
+        <h4>Agile Team Project</h4>
+        <pre>
+          Worked on an Agile software development team building a chess application.
+          Under the guidance of a senior software engineer,
+          we had weekly Agile team meetings for code reviews,
+          sprint planning, and feature assignments.
+        </pre>
+        <br/>
+        <%= image_tag 'chess.png', class: "full-width" %>
+      </div>
+      <br class="clear"/>
+      <h3 id="skills-and-tools">Skills &amp; Tools</h3>
+      <hr class="yellow"/>
+      <pre class="skill-and-tools">
+        Proficience in HTML, CSS, JavaScripts, Ruby on Rails. Payment processing.
+        Specialize in Ecommerce web application, android mobile app.
+      </pre>
+      <div class="icons">
+        <%= image_tag 'github.png' %>
+        <%= image_tag 'rubocop.png' %>
+        <%= image_tag 'trello.png' %>
+        <%= image_tag 'slack.png' %>
+        <%= image_tag 'codeship.png' %>
+        <br class="clear">
+        <%= image_tag 'skills.png' %>
+      </div>
+      
+      <div class="contact-me" id="hire-me">
+        <h3 class="contact-headline">Contact</h3>
+        <hr class="yellow"/>
+        <p class="contact-info">
+          Ready for an opportunity to shine. Get in touch via email:
+        </p>
+        
+        <p>
+          <a href="mailto:munch2018@gmail.com" class"contact-link">
+            munch2018@gmail.com
+            <a/>
+          </p>
+          
+        </div>
+        
+      </div>
+    </body>
+    </html>
+    
