@@ -1,6 +1,4 @@
 == README
-
-Things you may want to cover:
 Demo protfolio site using ruby on rails.
 * Ruby version
 4.1.9
